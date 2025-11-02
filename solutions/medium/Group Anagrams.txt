@@ -1,0 +1,16 @@
+// Title: Group Anagrams
+            // Difficulty: Medium
+            // Language: Python3
+            // Link: https://leetcode.com/problems/group-anagrams/
+
+            new.append(i)
+
+        hash_map = {}
+        for i in range(len(new)):
+            if new[i] in hash_map:
+                hash_map[new[i]].append(strs[i])
+            else:
+                hash_map[new[i]] = [strs[i]]
+
+        return (list(hash_map.values()))
+
