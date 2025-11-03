@@ -3,16 +3,16 @@
             // Language: Python3
             // Link: https://leetcode.com/problems/valid-anagram/
 
-        if len(a_Array) != len(b_Array) :
-            return False
-        for i in a_Array :
-            if   i in b_Array:
-                b_Array.remove(i)
-        if len(b_Array) == 0 : 
-            return True
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        count = [0] * 26
+        for char in s:
+            count[ord(char) - ord('a')] += 1 
+        for ch in t :
+            count2[ord(ch) - ord('a')] += 1  
+        if count==count2 :
+        count2=[0] * 26
+            return True 
         else :
             return False
-        b_Array=[i for i in t] 
-        a_Array=[i for i in s]
-    def isAnagram(self, s: str, t: str) -> bool:
-class Solution:
+
