@@ -1,0 +1,14 @@
+// Title: Product of Array Except Self
+            // Difficulty: Medium
+            // Language: Python3
+            // Link: https://leetcode.com/problems/product-of-array-except-self/
+
+        for i in range(len(nums)):
+            if i>0 and i<len(nums)-1:
+                main.append(prefix[i-1]*suffix[i+1])
+            elif i==0 :
+                main.append(suffix[i+1])
+            elif i==len(nums)-1:
+                main.append(prefix[i-1])
+        return main
+        
