@@ -1,0 +1,13 @@
+// Title: Valid Sudoku
+            // Difficulty: Medium
+            // Language: Python3
+            // Link: https://leetcode.com/problems/valid-sudoku/
+
+                if board[i][j]!=".":
+        for i in range(9):
+            for j in range(9):
+        row=defaultdict(list)
+        col=defaultdict(list)
+        sq=defaultdict(list)
+    def isValidSudoku(self, board: List[List[str]]) -> bool:
+class Solution:
