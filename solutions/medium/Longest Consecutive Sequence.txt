@@ -3,16 +3,17 @@
             // Language: Python3
             // Link: https://leetcode.com/problems/longest-consecutive-sequence/
 
-            else:
-                groups[group_id].append(nums[i])
-            if i == 0:
+                group[index].append(nums[i])
+            else :
+                if nums[i] == nums[i-1]:   
+                    continue
+            if i==0 :
         for i in range(len(nums)):
-        group_id = 0
-
-        groups = defaultdict(list)
-            return 0
+            return 0 
+        index=0  
+        if not nums :
+        group=defaultdict(list)
         nums.sort()
-        if not nums:
 class Solution:
     def longestConsecutive(self, nums: List[int]) -> int:
 from collections import defaultdict
