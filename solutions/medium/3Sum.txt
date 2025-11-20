@@ -1,0 +1,19 @@
+// Title: 3Sum
+            // Difficulty: Medium
+            // Language: Python3
+            // Link: https://leetcode.com/problems/3sum/
+
+                    result.add((sorted_nums[i],sorted_nums[j],sorted_nums
+                if total_sum==0 :
+                total_sum=sorted_nums[i]+sorted_nums[j]+sorted_nums[k]
+            while(j<k):
+            k=len(sorted_nums)-1 
+            j=i+1 
+        sorted_nums=sorted(nums)
+        for i in range(len(sorted_nums)-2):
+        result=set()
+        
+        if nums is None or len(nums) < 3:
+            return []
+class Solution:
+    def threeSum(self, nums: List[int]) -> List[List[int]]:
